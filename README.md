@@ -42,13 +42,17 @@ php yii rbac/init
 ```
 
 ```
-exit
+chmod -R 777  ./rbac
 ```
 
 ```
 chmod -R 666  ./web/assets/
 ```
 
+```
+exit
+```
+
 Open <a href="http://localhost:8000">http://localhost:8000</a>
 
-use root:123 in login form
+use `root:123` in login form
