@@ -50,6 +50,14 @@ chmod -R 777 ./web/assets/
 ```
 
 ```
+mkdir ./uploads
+```
+```
+chmod -R 777 ./uploads
+```
+
+
+```
 exit
 ```
 
