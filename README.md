@@ -42,11 +42,11 @@ php yii rbac/init
 ```
 
 ```
-chmod -R 777  ./rbac
+chmod -R 777 ./rbac
 ```
 
 ```
-chmod -R 666  ./web/assets/
+chmod -R 777 ./web/assets/
 ```
 
 ```
