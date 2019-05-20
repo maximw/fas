@@ -46,7 +46,7 @@ exit
 ```
 
 ```
-chmod -R 777  ./web/assets/
+chmod -R 666  ./web/assets/
 ```
 
 Open <a href="http://localhost:8000">http://localhost:8000</a>
