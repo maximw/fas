@@ -6,11 +6,15 @@ git clone https://github.com/maximw/fas.git
 ```
 
 ```
-docekr-compose up -d
+cd ./fas
 ```
 
 ```
-docekr-compose exec mysql mysql bash
+docker-compose up -d
+```
+
+```
+docker-compose exec mysql bash
 ```
 
 ```
@@ -22,11 +26,19 @@ exit
 ```
 
 ```
-docekr-compose exec php bash
+docker-compose exec php bash
 ```
 
 ```
 composer update --prefer-dist
+```
+
+```
+mkdir ./rbac
+```
+
+```
+php yii rbac/init
 ```
 
 ```
@@ -36,5 +48,7 @@ exit
 ```
 chmod -R 777  ./web/assets/
 ```
+
+Open <a href="http://localhost:8000">http://localhost:8000</a>
 
 use root:123 in login form

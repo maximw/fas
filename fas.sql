@@ -73,7 +73,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `password`, `auth_key`, `role`) VALUES
-(1, 'root', '$2y$10$DzyueBQDnovPd2jPjbSFc.OlVldVfKVuOzMlC5XSLFDEzdd2d7EgC', '', 'operator');
+(1, 'root', '$2y$10$DzyueBQDnovPd2jPjbSFc.OlVldVfKVuOzMlC5XSLFDEzdd2d7EgC', '', 'admin');
 
 
 --

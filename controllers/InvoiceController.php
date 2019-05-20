@@ -198,7 +198,7 @@ class InvoiceController extends Controller
     protected function saveInvoice($model, $uploadModel)
     {
         $uploadModel->files = UploadedFile::getInstances($uploadModel, 'files');
-        if (!empty($uploadModel->files) && RbacHelper::can(RbacHelper::PERMISSION_CREATE)) {
+        if (!empty($uploadModel->files) && !RbacHelper::can(RbacHelper::PERMISSION_CREATE)) {
             throw new ForbiddenHttpException();
         }
         $model->load(Yii::$app->request->post(), 'Invoice');
