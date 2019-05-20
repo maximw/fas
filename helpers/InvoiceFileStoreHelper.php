@@ -33,7 +33,7 @@ class InvoiceFileStoreHelper
             . $scanId;
     }
 
-    protected function getBasePath()
+    protected static function getBasePath()
     {
         return \Yii::getAlias('@app')
             . DIRECTORY_SEPARATOR
